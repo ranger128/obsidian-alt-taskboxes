@@ -20,34 +20,17 @@ Merging a PR into `main` builds the plugin and publishes a GitHub release tagged
 
 ## Task markers
 
-Each task character gets a [Lucide](https://lucide.dev) square icon in reading view and live preview. Any other character falls back to a checked box. Only done and cancelled tasks are struck through.
+Each status gets a colored [Lucide](https://lucide.dev) square icon in reading view and live preview. Any other character falls back to a checked box. Only done and cancelled tasks are struck through.
 
-| Markdown | Meaning | Icon |
+| Markdown | Status | Icon |
 | --- | --- | --- |
 | `- [ ]` | To do | square |
 | `- [x]` | Done | square-check-big |
 | `- [X]` | Done | square-check-big |
 | `- [/]` | In progress | square-slash |
-| `- [-]` | Cancelled | square-x |
-| `- [B]` | Blocked | square-stop |
-| `- [P]` | Paused / on hold | square-pause |
+| `- [=]` | Paused / on hold | square-pause |
+| `- [#]` | Blocked | square-stop |
+| `- [@]` | Delegated / waiting on someone | square-user |
 | `- [>]` | Forwarded / migrated | square-arrow-right |
 | `- [<]` | Scheduled | square-arrow-left |
-| `- [D]` | Delegated | square-user |
-| `- [?]` | Question | square-dashed |
-| `- [!]` | Important | square-exclamation-point |
-| `- [*]` | Star | square-star |
-| `- [n]` | Note | square-pen |
-| `- ["]` | Quote | message-square-quote |
-| `- [i]` | Information | square-text |
-| `- [I]` | Idea | square-sparkles |
-| `- [l]` | Location | square-dot |
-| `- [b]` | Bookmark | square-bookmark |
-| `- [S]` | Savings | square-percent |
-| `- [p]` | Pro | square-plus |
-| `- [c]` | Con | square-minus |
-| `- [f]` | Fire | square-activity |
-| `- [k]` | Key | square-asterisk |
-| `- [w]` | Win | square-chevron-up |
-| `- [u]` | Up | square-arrow-up |
-| `- [d]` | Down | square-arrow-down |
+| `- [-]` | Cancelled | square-x |
