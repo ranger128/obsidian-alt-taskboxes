@@ -1,16 +1,18 @@
 /* Per-marker --atb-icon and --atb-color are generated in main.ts. */
 
-/* Extra selectors outrank Obsidian's default checkbox, :checked and :hover styles. */
+/* !important so themes and snippets that paint their own task checkboxes (gradients, borders, shadows) can't show through. */
 body input.task-list-item-checkbox[type="checkbox"],
 body input.task-list-item-checkbox[type="checkbox"]:checked,
 body input.task-list-item-checkbox[type="checkbox"]:hover {
-	border: none;
-	border-radius: 0;
-	background-color: var(--atb-color, var(--checkbox-border-color));
-	-webkit-mask: var(--atb-icon) center / contain no-repeat;
-	mask: var(--atb-icon) center / contain no-repeat;
+	border: none !important;
+	border-radius: 0 !important;
+	box-shadow: none !important;
+	background: var(--atb-color, var(--checkbox-border-color)) !important;
+	-webkit-mask: var(--atb-icon) center / contain no-repeat !important;
+	mask: var(--atb-icon) center / contain no-repeat !important;
 }
 
+body input.task-list-item-checkbox[type="checkbox"]::before,
 body input.task-list-item-checkbox[type="checkbox"]::after {
-	display: none;
+	display: none !important;
 }
