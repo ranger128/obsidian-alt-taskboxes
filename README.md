@@ -20,7 +20,7 @@ Merging a PR into `main` builds the plugin and publishes a GitHub release tagged
 
 ## Task markers
 
-Each status gets a colored [Lucide](https://lucide.dev) square icon in reading view and live preview. Any other character falls back to a checked box. Only done and cancelled tasks are struck through.
+Each status gets a colored [Lucide](https://lucide.dev) square icon in reading view and live preview. Markers, icons and colors are defined in the `MARKERS` map in `main.ts`. Any other character falls back to a checked box. Only done and cancelled tasks are struck through.
 
 | Markdown | Status | Icon |
 | --- | --- | --- |
