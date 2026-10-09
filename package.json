@@ -1,6 +1,6 @@
 {
 	"name": "obsidian-alt-taskboxes",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "Alternate task checkbox styles for Obsidian.",
 	"main": "main.js",
 	"private": true,

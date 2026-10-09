@@ -1,7 +1,7 @@
 {
 	"id": "alt-taskboxes",
 	"name": "Alternate Taskboxes",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"minAppVersion": "1.4.0",
 	"description": "Alternate task checkbox styles for Obsidian.",
 	"author": "ranger128",
