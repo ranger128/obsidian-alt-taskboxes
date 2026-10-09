@@ -9,8 +9,9 @@ body input.task-list-item-checkbox[type="checkbox"]:hover {
 	border-radius: 0 !important;
 	box-shadow: none !important;
 	background: var(--atb-color, var(--checkbox-border-color)) !important;
-	-webkit-mask: var(--atb-icon) center / contain no-repeat !important;
-	mask: var(--atb-icon) center / contain no-repeat !important;
+	/* The box keeps the theme's size; only the icon drawn inside it is scaled down. */
+	-webkit-mask: var(--atb-icon) center / 85% no-repeat !important;
+	mask: var(--atb-icon) center / 85% no-repeat !important;
 }
 
 body input.task-list-item-checkbox[type="checkbox"]::before,
