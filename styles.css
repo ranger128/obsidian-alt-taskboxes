@@ -4,7 +4,8 @@
 body input.task-list-item-checkbox[type="checkbox"],
 body input.task-list-item-checkbox[type="checkbox"]:checked,
 body input.task-list-item-checkbox[type="checkbox"]:hover {
-	border: none !important;
+	/* Keep the border width so the checkbox takes the same space as Obsidian's and lines stay aligned. */
+	border-color: transparent !important;
 	border-radius: 0 !important;
 	box-shadow: none !important;
 	background: var(--atb-color, var(--checkbox-border-color)) !important;
