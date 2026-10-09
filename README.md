@@ -20,17 +20,14 @@ Merging a PR into `main` builds the plugin and publishes a GitHub release tagged
 
 ## Task markers
 
-Each status gets a colored [Lucide](https://lucide.dev) square icon in reading view and live preview. Markers, icons and colors are defined in the `MARKERS` map in `main.ts`. Any other character falls back to a checked box. Only done and cancelled tasks are struck through.
+The markers follow David Allen's [GTD workflow](https://gettingthingsdone.com/wp-content/uploads/2024/05/GTD_workflow_map.pdf). Each status gets a colored [Lucide](https://lucide.dev) square icon in reading view and live preview. Markers, icons and colors are defined in the `MARKERS` map in `main.ts`. Any other character falls back to a checked box. Only done and cancelled tasks are struck through.
 
-| Markdown | Status | Icon |
-| --- | --- | --- |
-| `- [ ]` | To do | square |
-| `- [x]` | Done | square-check-big |
-| `- [X]` | Done | square-check-big |
-| `- [/]` | In progress | square-slash |
-| `- [=]` | Paused / on hold | square-pause |
-| `- [#]` | Blocked | square-stop |
-| `- [@]` | Delegated / waiting on someone | square-user |
-| `- [>]` | Forwarded / migrated | square-arrow-right |
-| `- [<]` | Scheduled | square-arrow-left |
-| `- [-]` | Cancelled | square-x |
+| Markdown | Status | GTD | Icon |
+| --- | --- | --- | --- |
+| `- [ ]` | To do | Next action | square |
+| `- [x]` | Done | Do it | square-check-big |
+| `- [X]` | Done | Do it | square-check-big |
+| `- [@]` | Waiting for | Delegate | square-user |
+| `- [<]` | Scheduled | Defer to calendar / tickler | square-arrow-left |
+| `- [?]` | Someday / maybe | Incubate | square-help |
+| `- [-]` | Cancelled | Trash | square-x |
